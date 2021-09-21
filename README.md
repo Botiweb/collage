@@ -12,6 +12,6 @@
 <h6>Babinszki Botond</h6>
 <p>Itt látható a kollázs képem:</p>
 <img
-src=https://yt3.ggpht.com/a/AGF-l79LmBPkjZAfjDij3X1RNiqwncVIOeObCumlSA=s900-mo-c-c0xffffffff-rj-k-no>
+src=https://github.com/Botiweb/collage/blob/main/kollazshazi.png>
 </body>
 </html>
