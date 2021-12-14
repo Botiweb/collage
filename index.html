@@ -3,13 +3,73 @@
 <head>
 </head>
 <body>
-  <nav>
-    <a href="https://botiweb.github.io/collage "style="background-color: blue;"> HOME </a>
-    <a href="https://botiweb.github.io/collage/keplink.html"> Képlink </a>
-    <a href="https://botiweb.github.io/orarend/orarend.html"> Órarend </a>
-    <a href="https://botiweb.github.io/collage/egeszseges.html"> Egészséges </a>
-    <a href="https://botiweb.github.io/collage/listak.html"> Listák </a>
-</nav>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="sidebar">
+      <a class="active href="index.html">Főoldal</a>
+      <a href="keplink.html">1. feladat</a>
+      <a href="listak.html">2. feladat</a>
+      <a href="orarend.html">3. feladat </a>
+    </div>
+    
+    <div class="content">
 <h1>Babinszki Botond</h1>
 <h2>Babinszki Botond</h2>
 <h3>Babinszki Botond</h3>
@@ -20,4 +80,3 @@
 <img src=https://github.com/Botiweb/collage/blob/main/kollazshazi.png?raw=true width=500>
 </body>
 </html>
-
