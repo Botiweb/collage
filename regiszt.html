@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+</head>
+
+<body>
+
+    <fieldset id="field" style="width: fit-content; background-color: gray;">
+        <legend style="background-color: darkgray;">Regisztráció</legend>
+        <input type="text" id="nev" placeholder="Név"><br></br>
+        <input type="password" id="jel" placeholder="Jelszó"><br></br>
+        <button onclick="belep(nev.value,jel.value)">Belépés</button>
+    </fieldset>
+
+    <button onclick="document.getElementById('field').style.backgroundColor = 'green'">Zöld</button>
+    <button onclick="document.getElementById('field').style.backgroundColor = 'grey'">Szürke</button>
+    <button onclick="document.getElementById('field').style.backgroundColor = 'blue'">Kék</button>
+
+    <script>
+        function belep(username, password) {
+            if (username != "BB") {
+                alert("Lehet hogy helytelenül adtad meg a felhasználó nevedet vagy a jelszavadat")
+            }
+            else {
+                if (password != "123") {
+                alert("Lehet hogy helytelenül adtad meg a felhasználó nevedet vagy a jelszavadat")
+            }
+            else {
+                alert("Belépés engedélyezve. Üdv: " + username)
+            }
+        }
+    }
+    </script>
+
+</body>
+
+</html>
